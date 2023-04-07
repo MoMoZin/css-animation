@@ -1,0 +1,26 @@
+body {
+  background-color: aquamarine;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* transition-property: width, height;
+  transition-duration: 2s;
+  transition-delay: 0.5s; */
+  /* transition-timing-function: liner; */
+  /* transition-timing-function: steps(5); */
+  /* transition-timing-function: cubic-bezier(.01, 1.02, .96, .54); */
+  /* https://cubic-bezier.com/ */
+
+  transition: all 2s linear;
+}
+
+div:hover {
+  width: 300px;
+}
+
+div:active {
+  height: 300px;
+}
