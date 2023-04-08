@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 100px;
+}
+
+.x {
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  top: 50%;
+}
+
+.y {
+  width: 1px;
+  height: 100vh;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 50%;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  transition: all 1s ease;
+  transform-origin: top left;
+}
+
+.item:hover {
+  transform: rotateZ(50deg);
+}
