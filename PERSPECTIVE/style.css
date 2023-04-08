@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 200px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  transition: all 1s ease;
+}
+
+.item:hover {
+  /* transform: translateZ(100px); */
+  /* transform: translate3d(20px, 20px, 20px); */
+  transform: rotate3d(1, 1, 1, 50deg);
+}
